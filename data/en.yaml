@@ -1,0 +1,140 @@
+organization:
+  description: >-
+    Horama Apps is an incubator and seedbed for independent applications.
+    We build useful products, bring them to their first community, and seek
+    sponsorships, partnerships, or funding to give them infrastructure and continuity.
+  partnerships:
+    - Sponsorship
+    - Infrastructure
+    - Distribution
+    - Funding
+    - Technical collaboration
+
+apps:
+  framewise:
+    tagline: Your photos. Your judgment. Your computer.
+    summary: >-
+      Framewise analyzes, scores, and sorts complete photo shoots without a
+      single image leaving your computer. Horama never receives, stores, or
+      trains on your photographs.
+    pitch: >-
+      Your photo archive should not have to trade privacy for intelligent tools.
+      Framewise finds the strongest frames, explains why they work, and helps
+      improve only what needs attention. Its faithful editing service follows
+      the analysis without reinventing the photograph: it respects the subject,
+      composition, and intent of the original capture while always leaving the
+      source untouched. Your images and your decisions remain yours.
+    opportunity_title: Local privacy. Editorial judgment.
+    opportunity_body: >-
+      Framewise finds the strongest frames and explains why they work without
+      moving your archive off your computer. When an image can improve, it proposes
+      precise changes that respect the subject, composition, and intent of the shot.
+    opportunity_highlights:
+      - Zero uploads
+      - Originals stay untouched
+      - Decisions under your control
+    audience: [Photographers, Photo editors, Creative studios]
+    features:
+      - "True privacy: no uploads, no cloud, and no storage on Horama servers"
+      - "Explainable culling: critique, scoring, duplicates, and editorial decisions under your control"
+      - "Faithful non-destructive editing guided by recommendations without replacing your eye or touching the original"
+    demo_label: DEMO / REAL WORKFLOW
+    demo_title: A complete shoot, without leaving your computer.
+    demo_caption: >-
+      A real Framewise walkthrough: contact sheet, explainable analysis, and an
+      edited-version library. Photos and results remain local.
+    demo_alt: Framewise demo analyzing and organizing a local photo shoot
+    status_label: Local v1.0
+    support_ask: We are looking for photographers and studios ready to prove that intelligent tools can be powerful without taking ownership of their archive, plus distribution and local-hardware partners.
+    roadmap:
+      - { title: Privacy by architecture, description: "Photos, analyses, and decisions stay on the user's computer", state: done }
+      - { title: Explainable professional culling, description: "Critique, ranking, duplicates, comparison, decisions, XMP, and recoverable cleanup", state: done }
+      - { title: Faithful non-destructive editing, description: "Analysis-guided improvements, local versions, and originals that always remain untouched", state: done }
+
+  stp:
+    tagline: 3D transformations ready for production.
+    summary: >-
+      A transformation engine that turns STL models into customized products
+      and manufacturing-ready artifacts.
+    pitch: >-
+      STP wraps complex 3D operations in simple, repeatable workflows. It enables
+      parametric products to move from an idea to a manufacturable file without specialized software.
+    audience: [Makers, 3D workshops, Product brands]
+    features:
+      - Product-specific workflows
+      - STL, 3MF, and GLB outputs
+      - An API designed for automation
+    status_label: Private beta
+    support_ask: We are looking for computing capacity, manufacturing pilots, and B2B partnerships.
+    roadmap:
+      - { title: Core transformers, description: "Urns, clickers, and a generic workflow", state: done }
+      - { title: Stable API, description: Artifact and download contracts, state: current }
+      - { title: Modular catalog, description: New product families, state: next }
+
+  itp:
+    tagline: Turn an image into an intention you can actually use.
+    summary: >-
+      A laboratory for translating visual references into clear, editable,
+      and reusable prompts.
+    pitch: >-
+      ITP helps creative teams understand what makes an image work and turn it
+      into instructions that can be iterated, shared, and reproduced.
+    audience: [Design, Marketing, AI teams]
+    features:
+      - Structured reference analysis
+      - Layer-based prompt editing
+      - Iteration history
+    status_label: Alpha
+    support_ask: We are looking for inference credits, pilot designers, and creative-tech allies.
+    roadmap:
+      - { title: Image to prompt, description: Core analysis workflow, state: done }
+      - { title: Layer editor, description: "Control over style, light, and composition", state: current }
+      - { title: Team library, description: Presets and collaboration, state: next }
+
+  horama-3d:
+    tagline: Configure, visualize, and manufacture in one place.
+    summary: >-
+      A web interface for loading STL models, inspecting them in 3D, and
+      configuring customized products connected to STP.
+    pitch: >-
+      Horama 3D brings parametric customization to any browser. It combines a
+      viewer, product controls, and generated artifacts in an experience ready
+      to grow from prototype to commercial configurator.
+    audience: [E-commerce, Digital manufacturing, Product]
+    features:
+      - Three.js viewer with orbit controls
+      - Configurable modules for each product
+      - Generated-artifact downloads
+    product_cta_label: View Configurator ↓
+    embed_label: INTERACTIVE CONFIGURATOR
+    embed_title: Design a piece from scratch.
+    embed_caption: >-
+      Try the sign generator directly here. This demo lets you configure and
+      preview the model while keeping downloads disabled.
+    status_label: Public v1.0
+    support_ask: We are looking for pilot shops, infrastructure support, and web 3D experts.
+    roadmap:
+      - { title: Local viewer, description: "STL loading, orbiting, and auto-framing", state: done }
+      - { title: STP integration, description: "Transformation, generation, and artifacts connected to the STP service", state: done }
+      - { title: Image to STL with ITP, description: "ITP interprets the visual reference and prepares the workflow that STP turns into printable geometry", state: current }
+      - { title: Commercial configurator, description: "Catalog, quoting, and checkout", state: next }
+
+  med:
+    tagline: More human digital tools for clinical work.
+    summary: >-
+      An experimentation space for reducing friction in healthcare workflows,
+      with privacy and clarity as requirements from day one.
+    pitch: >-
+      MED explores how software can give time and context back to healthcare
+      professionals. It is in discovery and aims to build with experts, not around them.
+    audience: [Healthcare professionals, Clinics, Health tech]
+    features:
+      - Clinical-workflow-centered design
+      - Privacy as a product principle
+      - Prototyping with specialists
+    status_label: Research
+    support_ask: We are looking for clinical advisors, pilot institutions, and health-tech allies.
+    roadmap:
+      - { title: Discovery, description: Interviews and problem definition, state: current }
+      - { title: Secure prototype, description: First private and testable workflow, state: next }
+      - { title: Clinical pilot, description: Supervised validation in context, state: next }
