@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   icons: { icon: "/horama-mark.png", shortcut: "/horama-mark.png" },
   openGraph: {
     title: "Horama Apps — Ideas que merecen existir",
-    description: "Cinco productos independientes buscando comunidad, alianzas e impulso.",
+    description: "Cuatro productos independientes buscando comunidad, alianzas e impulso.",
     type: "website",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Horama Apps — Ideas que merecen existir" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Horama Apps — Ideas que merecen existir",
-    description: "Cinco productos independientes buscando comunidad, alianzas e impulso.",
+    description: "Cuatro productos independientes buscando comunidad, alianzas e impulso.",
     images: ["/og.png"],
   },
 };

@@ -73,51 +73,6 @@ export const siteData = {
       ]
     },
     {
-      "slug": "stp",
-      "name": "STP",
-      "monogram": "STP",
-      "tagline": "Transformaciones 3D listas para producir.",
-      "summary": "Un motor de transformación para convertir modelos STL en productos personalizados y artefactos listos para fabricación.",
-      "pitch": "STP encapsula operaciones 3D complejas detrás de flujos simples y repetibles. Permite que productos parametrizables pasen de una idea a un archivo fabricable sin depender de software especializado.",
-      "audience": [
-        "Makers",
-        "Talleres 3D",
-        "Marcas de producto"
-      ],
-      "features": [
-        "Flujos específicos por tipo de producto",
-        "Salidas STL, 3MF y GLB",
-        "API preparada para automatización"
-      ],
-      "version": "1.0.1",
-      "status": "beta",
-      "status_label": "Beta privada",
-      "color": "#f5c400",
-      "ink": "#141414",
-      "accent": "#fff0a6",
-      "related_apps": [
-        "horama-3d"
-      ],
-      "support_ask": "Buscamos capacidad de cómputo, pilotos de fabricación y partnerships B2B.",
-      "roadmap": [
-        {
-          "title": "Transformadores base",
-          "description": "Urnas, clickers y flujo genérico",
-          "state": "done"
-        },
-        {
-          "title": "API estable",
-          "description": "Contrato de artefactos y descargas",
-          "state": "current"
-        },
-        {
-          "title": "Catálogo modular",
-          "description": "Nuevas familias de producto",
-          "state": "next"
-        }
-      ]
-    },
-    {
       "slug": "itp",
       "name": "ITP",
       "monogram": "ITP",
@@ -142,7 +97,6 @@ export const siteData = {
       "accent": "#e5dcff",
       "related_apps": [
         "horama-3d",
-        "stp",
         "framewise"
       ],
       "support_ask": "Buscamos créditos de inferencia, diseñadores piloto y aliados de creative tech.",
@@ -168,28 +122,27 @@ export const siteData = {
       "slug": "horama-3d",
       "name": "Horama 3D",
       "monogram": "H3",
-      "logo": "/apps/horama-3d/logo.svg",
+      "logo": "/apps/horama-3d/mark.png",
       "tagline": "Configura, visualiza y fabrica en un solo lugar.",
-      "summary": "Una interfaz web para cargar modelos STL, inspeccionarlos en 3D y configurar productos personalizados conectados con STP.",
-      "pitch": "Horama 3D acerca la personalización paramétrica a cualquier navegador. Reúne visor, controles de producto y artefactos generados en una experiencia preparada para crecer de prototipo a configurador comercial.",
+      "summary": "Un configurador web que transforma modelos e imágenes en piezas 3D imprimibles, directamente en el navegador y sin servicios externos.",
+      "pitch": "Horama 3D acerca la personalización paramétrica a cualquier navegador. Reúne visor, validación STL, geometría local y exportación en una sola experiencia. Sus módulos convierten modelos, imágenes y texto en productos listos para fabricar sin enviar los archivos del usuario a otro servicio.",
       "audience": [
-        "E-commerce",
+        "Makers",
         "Fabricación digital",
-        "Producto"
+        "E-commerce"
       ],
       "features": [
-        "Visor Three.js con controles de órbita",
-        "Módulos configurables por producto",
-        "Descarga de artefactos generados"
+        "Procesamiento local: visor, validación STL y generación de geometría en el navegador",
+        "Módulos listos: lámparas, urnas, clickers, texturas, letreros y brazaletes",
+        "Imagen por capas: cuantización por color y exportación multicolor en 3MF"
       ],
       "version": "1.0.0",
       "status": "stable",
       "status_label": "v1.0 pública",
-      "color": "#28d7a1",
-      "ink": "#0b211a",
-      "accent": "#c8f8e9",
+      "color": "#ffc400",
+      "ink": "#111111",
+      "accent": "#fff3b0",
       "related_apps": [
-        "stp",
         "itp"
       ],
       "repo": "https://github.com/horama-apps/Horama3D",
@@ -202,18 +155,23 @@ export const siteData = {
       "support_ask": "Buscamos comercios piloto, soporte de infraestructura y expertos en 3D web.",
       "roadmap": [
         {
-          "title": "Visor local",
-          "description": "Carga, órbita y autoencuadre STL",
+          "title": "Motor 3D local",
+          "description": "Carga, validación, órbita, autoencuadre y operaciones geométricas en el navegador",
           "state": "done"
         },
         {
-          "title": "Integración STP",
-          "description": "Transformación, generación y artefactos conectados al servicio STP",
+          "title": "Catálogo modular",
+          "description": "Lámparas, urnas con cavidad y ribs, clickers, texturas, letreros y brazaletes",
           "state": "done"
         },
         {
-          "title": "Image to STL con ITP",
-          "description": "ITP interpreta la referencia visual y prepara el flujo que STP convertirá en geometría imprimible",
+          "title": "Image Layers multicolor",
+          "description": "Imagen cuantizada convertida en capas de color y empaquetada como 3MF",
+          "state": "done"
+        },
+        {
+          "title": "Llaveros desde imagen",
+          "description": "Nuevo módulo de imagen a geometría con controles de fabricación",
           "state": "current"
         },
         {
@@ -324,40 +282,6 @@ export const siteTranslations = {
         }
       ]
     },
-    "stp": {
-      "tagline": "3D transformations ready for production.",
-      "summary": "A transformation engine that turns STL models into customized products and manufacturing-ready artifacts.",
-      "pitch": "STP wraps complex 3D operations in simple, repeatable workflows. It enables parametric products to move from an idea to a manufacturable file without specialized software.",
-      "audience": [
-        "Makers",
-        "3D workshops",
-        "Product brands"
-      ],
-      "features": [
-        "Product-specific workflows",
-        "STL, 3MF, and GLB outputs",
-        "An API designed for automation"
-      ],
-      "status_label": "Private beta",
-      "support_ask": "We are looking for computing capacity, manufacturing pilots, and B2B partnerships.",
-      "roadmap": [
-        {
-          "title": "Core transformers",
-          "description": "Urns, clickers, and a generic workflow",
-          "state": "done"
-        },
-        {
-          "title": "Stable API",
-          "description": "Artifact and download contracts",
-          "state": "current"
-        },
-        {
-          "title": "Modular catalog",
-          "description": "New product families",
-          "state": "next"
-        }
-      ]
-    },
     "itp": {
       "tagline": "Turn an image into an intention you can actually use.",
       "summary": "A laboratory for translating visual references into clear, editable, and reusable prompts.",
@@ -394,17 +318,17 @@ export const siteTranslations = {
     },
     "horama-3d": {
       "tagline": "Configure, visualize, and manufacture in one place.",
-      "summary": "A web interface for loading STL models, inspecting them in 3D, and configuring customized products connected to STP.",
-      "pitch": "Horama 3D brings parametric customization to any browser. It combines a viewer, product controls, and generated artifacts in an experience ready to grow from prototype to commercial configurator.",
+      "summary": "A web configurator that turns models and images into printable 3D parts, directly in the browser and without external services.",
+      "pitch": "Horama 3D brings parametric customization to any browser. It combines a viewer, STL validation, local geometry, and export in one experience. Its modules turn models, images, and text into manufacturing-ready products without sending the user's files to another service.",
       "audience": [
-        "E-commerce",
+        "Makers",
         "Digital manufacturing",
-        "Product"
+        "E-commerce"
       ],
       "features": [
-        "Three.js viewer with orbit controls",
-        "Configurable modules for each product",
-        "Generated-artifact downloads"
+        "Local processing: viewer, STL validation, and in-browser geometry generation",
+        "Ready modules: lamps, urns, clickers, textures, signs, and bracelets",
+        "Image Layers: color quantization and multicolor 3MF export"
       ],
       "product_cta_label": "View Configurator ↓",
       "embed_label": "INTERACTIVE CONFIGURATOR",
@@ -414,18 +338,23 @@ export const siteTranslations = {
       "support_ask": "We are looking for pilot shops, infrastructure support, and web 3D experts.",
       "roadmap": [
         {
-          "title": "Local viewer",
-          "description": "STL loading, orbiting, and auto-framing",
+          "title": "Local 3D engine",
+          "description": "In-browser loading, validation, orbiting, auto-framing, and geometry operations",
           "state": "done"
         },
         {
-          "title": "STP integration",
-          "description": "Transformation, generation, and artifacts connected to the STP service",
+          "title": "Modular catalog",
+          "description": "Lamps, cavity-and-rib urns, clickers, textures, signs, and bracelets",
           "state": "done"
         },
         {
-          "title": "Image to STL with ITP",
-          "description": "ITP interprets the visual reference and prepares the workflow that STP turns into printable geometry",
+          "title": "Multicolor Image Layers",
+          "description": "A quantized image converted into color layers and packaged as 3MF",
+          "state": "done"
+        },
+        {
+          "title": "Image keychains",
+          "description": "A new image-to-geometry module with manufacturing controls",
           "state": "current"
         },
         {

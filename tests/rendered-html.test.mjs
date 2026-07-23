@@ -29,9 +29,11 @@ test("renders product routes with roadmap and version", async () => {
   const html = await response.text();
   assert.match(html, /Configura, visualiza y fabrica/);
   assert.match(html, /1\.0\.0/);
+  assert.match(html, /<svg viewBox="0 0 400 400"/);
+  assert.match(html, /M200 150 244 176 200 202 156 176Z/);
   assert.match(html, /ROADMAP/);
-  assert.match(html, /Image to STL con ITP/);
-  assert.match(html, /servicio STP/);
+  assert.match(html, /Image Layers multicolor/);
+  assert.match(html, /Catálogo modular/);
   assert.match(html, /Ver Configurador ↓/);
   assert.match(html, /href="#configurator"/);
   assert.match(html, /id="configurator"/);
@@ -39,26 +41,21 @@ test("renders product routes with roadmap and version", async () => {
   assert.match(html, /<iframe/);
 });
 
-test("renders cross-product references for STP and ITP", async () => {
-  const stpHtml = await (await render("/stp/")).text();
-  assert.match(stpHtml, /PRODUCTOS CONECTADOS/);
-  assert.match(stpHtml, /href="\/horama-3d"/);
-
+test("renders current cross-product references", async () => {
   const itpHtml = await (await render("/itp/")).text();
   assert.match(itpHtml, /href="\/horama-3d"/);
-  assert.match(itpHtml, /href="\/stp"/);
   assert.match(itpHtml, /href="\/framewise"/);
   assert.doesNotMatch(itpHtml, /class="support-arrow"/);
 });
 
 test("renders English routes and real app versions", async () => {
-  const response = await render("/en/stp/");
+  const response = await render("/en/horama-3d/");
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /3D transformations ready for production/);
-  assert.match(html, /1\.0\.1/);
+  assert.match(html, /Configure, visualize, and manufacture/);
+  assert.match(html, /1\.0\.0/);
+  assert.match(html, /Multicolor Image Layers/);
   assert.match(html, /Back to portfolio/);
-  assert.match(html, /href="\/stp"/);
 });
 
 test("renders Framewise with its real brand and privacy-first product data", async () => {

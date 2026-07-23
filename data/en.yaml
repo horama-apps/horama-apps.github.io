@@ -51,26 +51,6 @@ apps:
       - { title: Explainable professional culling, description: "Critique, ranking, duplicates, comparison, decisions, XMP, and recoverable cleanup", state: done }
       - { title: Faithful non-destructive editing, description: "Analysis-guided improvements, local versions, and originals that always remain untouched", state: done }
 
-  stp:
-    tagline: 3D transformations ready for production.
-    summary: >-
-      A transformation engine that turns STL models into customized products
-      and manufacturing-ready artifacts.
-    pitch: >-
-      STP wraps complex 3D operations in simple, repeatable workflows. It enables
-      parametric products to move from an idea to a manufacturable file without specialized software.
-    audience: [Makers, 3D workshops, Product brands]
-    features:
-      - Product-specific workflows
-      - STL, 3MF, and GLB outputs
-      - An API designed for automation
-    status_label: Private beta
-    support_ask: We are looking for computing capacity, manufacturing pilots, and B2B partnerships.
-    roadmap:
-      - { title: Core transformers, description: "Urns, clickers, and a generic workflow", state: done }
-      - { title: Stable API, description: Artifact and download contracts, state: current }
-      - { title: Modular catalog, description: New product families, state: next }
-
   itp:
     tagline: Turn an image into an intention you can actually use.
     summary: >-
@@ -94,17 +74,18 @@ apps:
   horama-3d:
     tagline: Configure, visualize, and manufacture in one place.
     summary: >-
-      A web interface for loading STL models, inspecting them in 3D, and
-      configuring customized products connected to STP.
+      A web configurator that turns models and images into printable 3D parts,
+      directly in the browser and without external services.
     pitch: >-
       Horama 3D brings parametric customization to any browser. It combines a
-      viewer, product controls, and generated artifacts in an experience ready
-      to grow from prototype to commercial configurator.
-    audience: [E-commerce, Digital manufacturing, Product]
+      viewer, STL validation, local geometry, and export in one experience. Its
+      modules turn models, images, and text into manufacturing-ready products
+      without sending the user's files to another service.
+    audience: [Makers, Digital manufacturing, E-commerce]
     features:
-      - Three.js viewer with orbit controls
-      - Configurable modules for each product
-      - Generated-artifact downloads
+      - "Local processing: viewer, STL validation, and in-browser geometry generation"
+      - "Ready modules: lamps, urns, clickers, textures, signs, and bracelets"
+      - "Image Layers: color quantization and multicolor 3MF export"
     product_cta_label: View Configurator ↓
     embed_label: INTERACTIVE CONFIGURATOR
     embed_title: Design a piece from scratch.
@@ -114,9 +95,10 @@ apps:
     status_label: Public v1.0
     support_ask: We are looking for pilot shops, infrastructure support, and web 3D experts.
     roadmap:
-      - { title: Local viewer, description: "STL loading, orbiting, and auto-framing", state: done }
-      - { title: STP integration, description: "Transformation, generation, and artifacts connected to the STP service", state: done }
-      - { title: Image to STL with ITP, description: "ITP interprets the visual reference and prepares the workflow that STP turns into printable geometry", state: current }
+      - { title: Local 3D engine, description: "In-browser loading, validation, orbiting, auto-framing, and geometry operations", state: done }
+      - { title: Modular catalog, description: "Lamps, cavity-and-rib urns, clickers, textures, signs, and bracelets", state: done }
+      - { title: Multicolor Image Layers, description: "A quantized image converted into color layers and packaged as 3MF", state: done }
+      - { title: Image keychains, description: "A new image-to-geometry module with manufacturing controls", state: current }
       - { title: Commercial configurator, description: "Catalog, quoting, and checkout", state: next }
 
   med:
