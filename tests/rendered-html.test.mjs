@@ -48,6 +48,7 @@ test("renders product routes with roadmap and version", async () => {
 test("renders GenAI Studio for businesses and content creators", async () => {
   const html = await (await render("/genai-studio/")).text();
   assert.match(html, /Tu estudio de contenido con IA/);
+  assert.match(html, /\/apps\/genai-studio\/logo\.png/);
   assert.match(html, /Negocios y marcas/);
   assert.match(html, /Influencers/);
   assert.match(html, /Creadores de contenido/);

@@ -107,6 +107,7 @@ apps:
   - slug: genai-studio
     name: GenAI Studio
     monogram: G
+    logo: /apps/genai-studio/logo.png
     theme: dark
     tagline: Tu estudio de contenido con IA, en cualquier pantalla.
     summary: >-

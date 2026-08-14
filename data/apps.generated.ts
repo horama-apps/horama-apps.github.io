@@ -132,6 +132,7 @@ export const siteData = {
       "slug": "genai-studio",
       "name": "GenAI Studio",
       "monogram": "G",
+      "logo": "/apps/genai-studio/logo.png",
       "theme": "dark",
       "tagline": "Tu estudio de contenido con IA, en cualquier pantalla.",
       "summary": "Una interfaz simple y responsiva para convertir workflows de IA en herramientas de producción accesibles desde iPhone, Android o computadora.",
