@@ -52,8 +52,8 @@ test("renders GenAI Studio for businesses and content creators", async () => {
   assert.match(html, /Influencers/);
   assert.match(html, /Creadores de contenido/);
   assert.match(html, /Producción multiformato/);
-  assert.match(html, /href="\/framewise"/);
-  assert.match(html, /href="\/horama-3d"/);
+  assert.doesNotMatch(html, /PRODUCTOS CONECTADOS/);
+  assert.doesNotMatch(html, /class="related-section/);
   assert.doesNotMatch(html, /github\.com/);
 });
 
@@ -80,6 +80,7 @@ test("renders Framewise with its desktop and iPhone product data", async () => {
   assert.match(html, /Una sesión completa/);
   assert.match(html, /Criterio editorial, también desde tu iPhone\./);
   assert.match(html, /App companion para iPhone/);
-  assert.match(html, /href="\/genai-studio"/);
+  assert.doesNotMatch(html, /PRODUCTOS CONECTADOS/);
+  assert.doesNotMatch(html, /class="related-section/);
   assert.doesNotMatch(html, /github\.com/);
 });

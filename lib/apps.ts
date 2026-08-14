@@ -29,7 +29,6 @@ export type AppData = {
   ink: string;
   accent: string;
   product_url?: string;
-  related_apps?: readonly string[];
   product_cta_label?: string;
   embed_url?: string;
   embed_label?: string;

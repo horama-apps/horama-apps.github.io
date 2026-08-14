@@ -214,15 +214,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .shape-2 { width: 210px; height: 90px; transform: rotate(-18deg); right: -25px; bottom: 45px; border-radius: 999px; }
 .shape-3 { width: 145px; height: 145px; right: 30px; bottom: 22px; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
 
-.related-section { padding-top: 95px; }
-.related-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
-.related-card { min-height: 150px; display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center; padding: 26px; border: 1px solid var(--line); border-radius: 15px; background: color-mix(in srgb, var(--related-color) 9%, transparent); transition: transform .2s, background .2s; }
-.related-card:hover { transform: translateY(-3px); background: color-mix(in srgb, var(--related-color) 17%, transparent); }
-.related-card small { color: var(--muted); font: 700 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
-.related-card h3 { margin: 7px 0 4px; font: 400 30px var(--serif); }
-.related-card p { margin: 0; color: var(--muted); font-size: 13px; }
-.related-card > span { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; }
-
 .roadmap-section { padding-top: 125px; padding-bottom: 140px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 100px; }
 .roadmap-heading > p:last-child { color: var(--muted); line-height: 1.7; max-width: 420px; margin-top: 28px; }
 .roadmap-list { border-top: 1px solid var(--ink); }
@@ -332,8 +323,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .feature-grid { grid-template-columns: 1fr; }
   .feature-grid article, .feature-grid article:last-child { min-height: 310px; border-right: 1px solid rgba(255,255,255,.16); border-bottom: 0; }
   .feature-grid article:last-child { border-bottom: 1px solid rgba(255,255,255,.16); }
-  .related-section { padding-top: 75px; }
-  .related-grid { grid-template-columns: 1fr; }
   .roadmap-section { padding-top: 90px; padding-bottom: 90px; }
   .roadmap-item { grid-template-columns: 50px 1fr; }
   .configurator-section { padding: 80px 0; }
