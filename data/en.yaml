@@ -12,64 +12,45 @@ organization:
 
 apps:
   framewise:
-    tagline: Your photos. Your judgment. Your computer.
+    tagline: Your archive. Your judgment. Now on iPhone too.
     summary: >-
-      Framewise analyzes, scores, and sorts complete photo shoots without a
-      single image leaving your computer. Horama never receives, stores, or
-      trains on your photographs.
+      Framewise analyzes, scores, and organizes photo shoots from the desktop
+      or its iPhone companion app connected to your local service. Horama never
+      receives, stores, or trains on your photographs.
     pitch: >-
       Your photo archive should not have to trade privacy for intelligent tools.
       Framewise finds the strongest frames, explains why they work, and helps
-      improve only what needs attention. Its faithful editing service follows
-      the analysis without reinventing the photograph: it respects the subject,
-      composition, and intent of the original capture while always leaving the
-      source untouched. Your images and your decisions remain yours.
-    opportunity_title: Local privacy. Editorial judgment.
+      improve only what needs attention. On iPhone, you can choose photos from
+      your library, send them to your own analysis service, and review results
+      and edited versions in a private mobile experience. Originals remain
+      untouched, and your decisions remain yours.
+    opportunity_title: Editorial judgment, now on your iPhone too.
     opportunity_body: >-
-      Framewise finds the strongest frames and explains why they work without
-      moving your archive off your computer. When an image can improve, it proposes
-      precise changes that respect the subject, composition, and intent of the shot.
+      Work through full shoots on your computer or select photos from your iPhone
+      library. Framewise connects both workflows with explainable analysis, a
+      private queue, and edits that respect subject, composition, and intent.
     opportunity_highlights:
-      - Zero uploads
+      - iPhone companion app
       - Originals stay untouched
-      - Decisions under your control
-    audience: [Photographers, Photo editors, Creative studios]
+      - Processing under your control
+    audience: [Photographers, Mobile creators, Creative studios]
     features:
-      - "True privacy: no uploads, no cloud, and no storage on Horama servers"
-      - "Explainable culling: critique, scoring, duplicates, and editorial decisions under your control"
-      - "Faithful non-destructive editing guided by recommendations without replacing your eye or touching the original"
+      - "Desktop and iPhone: analyze complete folders or choose photos directly from your iOS library"
+      - "Explainable culling: critique, scoring, duplicates, and editorial decisions in a private per-device library"
+      - "Complete workflow: analysis queue, faithful editing, local versions, and captions for sharing without touching the original"
     demo_label: DEMO / REAL WORKFLOW
-    demo_title: A complete shoot, without leaving your computer.
+    demo_title: A complete desktop shoot, connected to iPhone.
     demo_caption: >-
       A real Framewise walkthrough: contact sheet, explainable analysis, and an
-      edited-version library. Photos and results remain local.
-    demo_alt: Framewise demo analyzing and organizing a local photo shoot
-    status_label: Local v1.0
-    support_ask: We are looking for photographers and studios ready to prove that intelligent tools can be powerful without taking ownership of their archive, plus distribution and local-hardware partners.
+      edited-version library. The companion app brings selection, progress, and
+      results to iPhone while the analysis service remains under your control.
+    demo_alt: Framewise demo analyzing a photo shoot connected to its iPhone app
+    status_label: Desktop v1 · iPhone companion
+    support_ask: We are looking for photographers, mobile creators, and studios to test the desktop-to-iPhone workflow, plus distribution and local-hardware partners.
     roadmap:
       - { title: Privacy by architecture, description: "Photos, analyses, and decisions stay on the user's computer", state: done }
       - { title: Explainable professional culling, description: "Critique, ranking, duplicates, comparison, decisions, XMP, and recoverable cleanup", state: done }
-      - { title: Faithful non-destructive editing, description: "Analysis-guided improvements, local versions, and originals that always remain untouched", state: done }
-
-  itp:
-    tagline: Turn an image into an intention you can actually use.
-    summary: >-
-      A laboratory for translating visual references into clear, editable,
-      and reusable prompts.
-    pitch: >-
-      ITP helps creative teams understand what makes an image work and turn it
-      into instructions that can be iterated, shared, and reproduced.
-    audience: [Design, Marketing, AI teams]
-    features:
-      - Structured reference analysis
-      - Layer-based prompt editing
-      - Iteration history
-    status_label: Alpha
-    support_ask: We are looking for inference credits, pilot designers, and creative-tech allies.
-    roadmap:
-      - { title: Image to prompt, description: Core analysis workflow, state: done }
-      - { title: Layer editor, description: "Control over style, light, and composition", state: current }
-      - { title: Team library, description: Presets and collaboration, state: next }
+      - { title: iPhone companion, description: "PhotoKit selection, private libraries, analysis queue, edits, and captions from iOS", state: done }
 
   horama-3d:
     tagline: Configure, visualize, and manufacture in one place.
@@ -101,22 +82,35 @@ apps:
       - { title: Image keychains, description: "A new image-to-geometry module with manufacturing controls", state: current }
       - { title: Commercial configurator, description: "Catalog, quoting, and checkout", state: next }
 
-  med:
-    tagline: More human digital tools for clinical work.
+  genai-studio:
+    tagline: Your AI content studio, on any screen.
     summary: >-
-      An experimentation space for reducing friction in healthcare workflows,
-      with privacy and clarity as requirements from day one.
+      A simple responsive interface that turns AI workflows into production
+      tools available from iPhone, Android, or desktop.
     pitch: >-
-      MED explores how software can give time and context back to healthcare
-      professionals. It is in discovery and aims to build with experts, not around them.
-    audience: [Healthcare professionals, Clinics, Health tech]
+      GenAI Studio turns a self-hosted ComfyUI installation into a production
+      studio the whole team can use. Businesses, influencers, and creators can
+      edit images, transform styles, generate audio, and download results without
+      navigating technical graphs. Every new workflow becomes a clear, reusable
+      tool ready to use from a phone or computer.
+    opportunity_title: Fewer nodes. More content ready to publish.
+    opportunity_body: >-
+      Bring your AI workflows into an interface your creative team understands.
+      Choose a format, upload references, write the instruction, and follow the
+      result in one queue using your own infrastructure.
+    opportunity_highlights:
+      - Mobile-first design
+      - Reusable workflows
+      - Your own infrastructure
+    audience: [Businesses and brands, Influencers, Content creators]
     features:
-      - Clinical-workflow-centered design
-      - Privacy as a product principle
-      - Prototyping with specialists
-    status_label: Research
-    support_ask: We are looking for clinical advisors, pilot institutions, and health-tech allies.
+      - "Multi-format production: image editing and simplification, voice generation, and a space ready for video"
+      - "No technical complexity: clear forms, uploads, microphone recording, job queue, and result downloads"
+      - "Extensible catalog: add new ComfyUI workflows without rewriting the interface or backend"
+    status_label: Functional alpha
+    support_ask: We are looking for businesses, influencers, and content teams to design repeatable workflows, plus partners in GPU infrastructure and creative distribution.
     roadmap:
-      - { title: Discovery, description: Interviews and problem definition, state: current }
-      - { title: Secure prototype, description: First private and testable workflow, state: next }
-      - { title: Clinical pilot, description: Supervised validation in context, state: next }
+      - { title: Responsive studio, description: "iPhone, Android, and desktop interface with asynchronous jobs and downloadable results", state: done }
+      - { title: Image and voice, description: "Visual editing, style simplification, and text-to-voice with reference audio", state: done }
+      - { title: Content workflows, description: "Presets for campaigns, products, social media, and video production", state: current }
+      - { title: Team spaces, description: "Shared library, permissions, and history for each brand or creator", state: next }

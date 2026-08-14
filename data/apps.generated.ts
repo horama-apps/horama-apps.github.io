@@ -19,41 +19,42 @@ export const siteData = {
       "monogram": "FW",
       "logo": "/apps/framewise/logo.svg",
       "theme": "dark",
-      "tagline": "Tus fotos. Tu criterio. Tu computadora.",
-      "summary": "Framewise analiza, califica y ordena sesiones fotográficas completas sin que una sola imagen abandone tu computadora. Horama no recibe, almacena ni entrena con tus fotografías.",
-      "pitch": "Tu archivo fotográfico no debería pagar con privacidad la comodidad de una herramienta inteligente. Framewise encuentra las tomas más fuertes, explica por qué funcionan y ayuda a mejorar únicamente lo necesario. Su servicio de edición fiel sigue las recomendaciones del análisis sin reinventar la foto: respeta al sujeto, la composición y la intención de la toma, mientras el original permanece siempre intacto. Tus imágenes y tus decisiones siguen siendo tuyas.",
-      "opportunity_title": "Privacidad local. Criterio editorial.",
-      "opportunity_body": "Framewise encuentra las tomas más fuertes y explica por qué funcionan sin sacar tu archivo de la computadora. Cuando una imagen puede mejorar, propone cambios precisos que respetan al sujeto, la composición y la intención de la toma.",
+      "tagline": "Tu archivo. Tu criterio. Ahora también en iPhone.",
+      "summary": "Framewise analiza, califica y organiza sesiones fotográficas desde el escritorio o su app companion para iPhone, conectada a tu servicio local. Horama no recibe, almacena ni entrena con tus fotografías.",
+      "pitch": "Tu archivo fotográfico no debería pagar con privacidad la comodidad de una herramienta inteligente. Framewise encuentra las tomas más fuertes, explica por qué funcionan y ayuda a mejorar únicamente lo necesario. En iPhone puedes elegir fotos de tu biblioteca, enviarlas a tu propio servicio de análisis y revisar resultados y versiones editadas desde una experiencia móvil privada. Los originales permanecen intactos y tus decisiones siguen siendo tuyas.",
+      "opportunity_title": "Criterio editorial, también desde tu iPhone.",
+      "opportunity_body": "Trabaja sesiones completas en tu computadora o selecciona fotos desde la biblioteca del iPhone. Framewise conecta ambos flujos con análisis explicable, una cola privada y ediciones que respetan al sujeto, la composición y la intención.",
       "opportunity_highlights": [
-        "Cero uploads",
+        "App companion para iPhone",
         "Originales intactos",
-        "Decisiones bajo tu control"
+        "Procesamiento bajo tu control"
       ],
       "audience": [
         "Fotógrafos",
-        "Editores de fotografía",
+        "Creadores móviles",
         "Estudios creativos"
       ],
       "features": [
-        "Privacidad real: sin uploads, sin nube y sin almacenamiento en servidores de Horama",
-        "Selección explicable: crítica, puntuación, duplicados y decisiones editoriales bajo tu control",
-        "Edición fiel y no destructiva: mejora desde las recomendaciones sin reemplazar tu mirada ni tocar el original"
+        "Escritorio e iPhone: analiza carpetas completas o elige fotos directamente desde tu biblioteca de iOS",
+        "Selección explicable: crítica, puntuación, duplicados y decisiones editoriales en una biblioteca privada por dispositivo",
+        "Flujo completo: cola de análisis, edición fiel, versiones locales y captions para compartir sin tocar el original"
       ],
       "version": "1.0.0",
       "status": "stable",
-      "status_label": "v1.0 local",
+      "status_label": "Desktop v1 · iPhone companion",
       "color": "#d8ff4f",
       "ink": "#0b0d0b",
       "accent": "#ff8a4b",
       "related_apps": [
-        "itp"
+        "genai-studio"
       ],
+      "repo": "https://github.com/davcastroruiz/framewise",
       "demo": "/apps/framewise/framewise-demo.gif",
       "demo_label": "DEMO / FLUJO REAL",
-      "demo_title": "Una sesión completa, sin salir de tu computadora.",
-      "demo_caption": "Recorrido real por Framewise: contact sheet, análisis explicable y biblioteca de versiones editadas. Las fotografías y sus resultados permanecen locales.",
-      "demo_alt": "Demostración de Framewise analizando y organizando una sesión fotográfica local",
-      "support_ask": "Buscamos fotógrafos y estudios que quieran demostrar que una experiencia inteligente puede ser poderosa sin apropiarse de su archivo, además de aliados de distribución y hardware local.",
+      "demo_title": "Una sesión completa en escritorio, conectada con iPhone.",
+      "demo_caption": "Recorrido real por Framewise: contact sheet, análisis explicable y biblioteca de versiones editadas. La app companion lleva la selección, el seguimiento y los resultados a iPhone mientras el servicio de análisis sigue bajo tu control.",
+      "demo_alt": "Demostración de Framewise analizando una sesión fotográfica conectada con su app para iPhone",
+      "support_ask": "Buscamos fotógrafos, creadores móviles y estudios que prueben el flujo entre escritorio e iPhone, además de aliados de distribución y hardware local.",
       "roadmap": [
         {
           "title": "Privacidad por arquitectura",
@@ -66,55 +67,9 @@ export const siteData = {
           "state": "done"
         },
         {
-          "title": "Edición fiel y no destructiva",
-          "description": "Mejoras guiadas por el análisis, versiones locales y originales siempre intactos",
+          "title": "Companion para iPhone",
+          "description": "Selección con PhotoKit, bibliotecas privadas, cola de análisis, ediciones y captions desde iOS",
           "state": "done"
-        }
-      ]
-    },
-    {
-      "slug": "itp",
-      "name": "ITP",
-      "monogram": "ITP",
-      "tagline": "De una imagen a una intención que sí se puede usar.",
-      "summary": "Un laboratorio para traducir referencias visuales en prompts claros, editables y reutilizables.",
-      "pitch": "ITP ayuda a equipos creativos a entender qué hace funcionar una imagen y convertirlo en instrucciones que se pueden iterar, compartir y reproducir.",
-      "audience": [
-        "Diseño",
-        "Marketing",
-        "Equipos de IA"
-      ],
-      "features": [
-        "Lectura estructurada de referencias",
-        "Prompts editables por capas",
-        "Historial de iteraciones"
-      ],
-      "version": "0.1.1",
-      "status": "alpha",
-      "status_label": "Alpha",
-      "color": "#9d7cff",
-      "ink": "#17131f",
-      "accent": "#e5dcff",
-      "related_apps": [
-        "horama-3d",
-        "framewise"
-      ],
-      "support_ask": "Buscamos créditos de inferencia, diseñadores piloto y aliados de creative tech.",
-      "roadmap": [
-        {
-          "title": "Imagen a prompt",
-          "description": "Flujo principal de análisis",
-          "state": "done"
-        },
-        {
-          "title": "Editor por capas",
-          "description": "Control de estilo, luz y composición",
-          "state": "current"
-        },
-        {
-          "title": "Librería de equipos",
-          "description": "Presets y colaboración",
-          "state": "next"
         }
       ]
     },
@@ -143,7 +98,7 @@ export const siteData = {
       "ink": "#111111",
       "accent": "#fff3b0",
       "related_apps": [
-        "itp"
+        "genai-studio"
       ],
       "repo": "https://github.com/horama-apps/Horama3D",
       "product_url": "https://horama-apps.github.io/Horama3D/?demo=true",
@@ -182,43 +137,61 @@ export const siteData = {
       ]
     },
     {
-      "slug": "med",
-      "name": "MED",
-      "monogram": "M+",
-      "tagline": "Herramientas digitales más humanas para el trabajo clínico.",
-      "summary": "Un espacio de experimentación para reducir fricción en flujos de salud, con privacidad y claridad como requisitos desde el inicio.",
-      "pitch": "MED explora cómo el software puede devolver tiempo y contexto a los profesionales de salud. Está en etapa de descubrimiento y busca construir junto a expertos, no alrededor de ellos.",
+      "slug": "genai-studio",
+      "name": "GenAI Studio",
+      "monogram": "G",
+      "theme": "dark",
+      "tagline": "Tu estudio de contenido con IA, en cualquier pantalla.",
+      "summary": "Una interfaz simple y responsiva para convertir workflows de IA en herramientas de producción accesibles desde iPhone, Android o computadora.",
+      "pitch": "GenAI Studio convierte una instalación propia de ComfyUI en un estudio de producción usable por todo el equipo. Negocios, influencers y creadores pueden editar imágenes, transformar estilos, generar audio y descargar resultados sin navegar grafos técnicos. Cada workflow nuevo aparece como una herramienta clara y reutilizable, lista para trabajar desde el teléfono o la computadora.",
+      "opportunity_title": "Menos nodos. Más contenido listo para publicar.",
+      "opportunity_body": "Lleva tus workflows de IA a una interfaz que entiende el equipo creativo. Elige una modalidad, carga referencias, escribe la instrucción y sigue el resultado desde una cola unificada, usando tu propia infraestructura.",
+      "opportunity_highlights": [
+        "Diseñado para móvil",
+        "Workflows reutilizables",
+        "Infraestructura propia"
+      ],
       "audience": [
-        "Profesionales de salud",
-        "Clínicas",
-        "Health tech"
+        "Negocios y marcas",
+        "Influencers",
+        "Creadores de contenido"
       ],
       "features": [
-        "Diseño centrado en el flujo clínico",
-        "Privacidad como principio de producto",
-        "Prototipado con especialistas"
+        "Producción multiformato: edición y simplificación de imágenes, generación de voz y espacio preparado para video",
+        "Experiencia sin complejidad técnica: formularios claros, uploads, micrófono, cola de trabajos y descarga de resultados",
+        "Catálogo extensible: agrega nuevos workflows de ComfyUI sin reescribir la interfaz ni el backend"
       ],
-      "version": "pending",
-      "status": "research",
-      "status_label": "Investigación",
-      "color": "#4b8cff",
-      "ink": "#0b1830",
-      "accent": "#d8e6ff",
-      "support_ask": "Buscamos asesores clínicos, instituciones piloto y aliados de health tech.",
+      "version": "0.1.0",
+      "status": "alpha",
+      "status_label": "Alpha funcional",
+      "color": "#ff6a3d",
+      "ink": "#101114",
+      "accent": "#ffd8cc",
+      "related_apps": [
+        "framewise",
+        "horama-3d"
+      ],
+      "repo": "https://github.com/horama-apps/genai",
+      "support_ask": "Buscamos negocios, influencers y equipos de contenido para diseñar workflows repetibles, además de aliados con infraestructura de GPU y distribución creativa.",
       "roadmap": [
         {
-          "title": "Descubrimiento",
-          "description": "Entrevistas y definición del problema",
+          "title": "Estudio responsivo",
+          "description": "Interfaz para iPhone, Android y computadora con jobs asíncronos y resultados descargables",
+          "state": "done"
+        },
+        {
+          "title": "Imagen y voz",
+          "description": "Edición visual, simplificación de estilo y voz desde texto con audio de referencia",
+          "state": "done"
+        },
+        {
+          "title": "Flujos para contenido",
+          "description": "Presets para campañas, producto, redes sociales y producción de video",
           "state": "current"
         },
         {
-          "title": "Prototipo seguro",
-          "description": "Primer flujo validable y privado",
-          "state": "next"
-        },
-        {
-          "title": "Piloto clínico",
-          "description": "Validación supervisada en contexto",
+          "title": "Espacios de equipo",
+          "description": "Biblioteca compartida, permisos e historial por marca o creador",
           "state": "next"
         }
       ]
@@ -238,32 +211,32 @@ export const siteTranslations = {
   },
   "apps": {
     "framewise": {
-      "tagline": "Your photos. Your judgment. Your computer.",
-      "summary": "Framewise analyzes, scores, and sorts complete photo shoots without a single image leaving your computer. Horama never receives, stores, or trains on your photographs.",
-      "pitch": "Your photo archive should not have to trade privacy for intelligent tools. Framewise finds the strongest frames, explains why they work, and helps improve only what needs attention. Its faithful editing service follows the analysis without reinventing the photograph: it respects the subject, composition, and intent of the original capture while always leaving the source untouched. Your images and your decisions remain yours.",
-      "opportunity_title": "Local privacy. Editorial judgment.",
-      "opportunity_body": "Framewise finds the strongest frames and explains why they work without moving your archive off your computer. When an image can improve, it proposes precise changes that respect the subject, composition, and intent of the shot.",
+      "tagline": "Your archive. Your judgment. Now on iPhone too.",
+      "summary": "Framewise analyzes, scores, and organizes photo shoots from the desktop or its iPhone companion app connected to your local service. Horama never receives, stores, or trains on your photographs.",
+      "pitch": "Your photo archive should not have to trade privacy for intelligent tools. Framewise finds the strongest frames, explains why they work, and helps improve only what needs attention. On iPhone, you can choose photos from your library, send them to your own analysis service, and review results and edited versions in a private mobile experience. Originals remain untouched, and your decisions remain yours.",
+      "opportunity_title": "Editorial judgment, now on your iPhone too.",
+      "opportunity_body": "Work through full shoots on your computer or select photos from your iPhone library. Framewise connects both workflows with explainable analysis, a private queue, and edits that respect subject, composition, and intent.",
       "opportunity_highlights": [
-        "Zero uploads",
+        "iPhone companion app",
         "Originals stay untouched",
-        "Decisions under your control"
+        "Processing under your control"
       ],
       "audience": [
         "Photographers",
-        "Photo editors",
+        "Mobile creators",
         "Creative studios"
       ],
       "features": [
-        "True privacy: no uploads, no cloud, and no storage on Horama servers",
-        "Explainable culling: critique, scoring, duplicates, and editorial decisions under your control",
-        "Faithful non-destructive editing guided by recommendations without replacing your eye or touching the original"
+        "Desktop and iPhone: analyze complete folders or choose photos directly from your iOS library",
+        "Explainable culling: critique, scoring, duplicates, and editorial decisions in a private per-device library",
+        "Complete workflow: analysis queue, faithful editing, local versions, and captions for sharing without touching the original"
       ],
       "demo_label": "DEMO / REAL WORKFLOW",
-      "demo_title": "A complete shoot, without leaving your computer.",
-      "demo_caption": "A real Framewise walkthrough: contact sheet, explainable analysis, and an edited-version library. Photos and results remain local.",
-      "demo_alt": "Framewise demo analyzing and organizing a local photo shoot",
-      "status_label": "Local v1.0",
-      "support_ask": "We are looking for photographers and studios ready to prove that intelligent tools can be powerful without taking ownership of their archive, plus distribution and local-hardware partners.",
+      "demo_title": "A complete desktop shoot, connected to iPhone.",
+      "demo_caption": "A real Framewise walkthrough: contact sheet, explainable analysis, and an edited-version library. The companion app brings selection, progress, and results to iPhone while the analysis service remains under your control.",
+      "demo_alt": "Framewise demo analyzing a photo shoot connected to its iPhone app",
+      "status_label": "Desktop v1 · iPhone companion",
+      "support_ask": "We are looking for photographers, mobile creators, and studios to test the desktop-to-iPhone workflow, plus distribution and local-hardware partners.",
       "roadmap": [
         {
           "title": "Privacy by architecture",
@@ -276,43 +249,9 @@ export const siteTranslations = {
           "state": "done"
         },
         {
-          "title": "Faithful non-destructive editing",
-          "description": "Analysis-guided improvements, local versions, and originals that always remain untouched",
+          "title": "iPhone companion",
+          "description": "PhotoKit selection, private libraries, analysis queue, edits, and captions from iOS",
           "state": "done"
-        }
-      ]
-    },
-    "itp": {
-      "tagline": "Turn an image into an intention you can actually use.",
-      "summary": "A laboratory for translating visual references into clear, editable, and reusable prompts.",
-      "pitch": "ITP helps creative teams understand what makes an image work and turn it into instructions that can be iterated, shared, and reproduced.",
-      "audience": [
-        "Design",
-        "Marketing",
-        "AI teams"
-      ],
-      "features": [
-        "Structured reference analysis",
-        "Layer-based prompt editing",
-        "Iteration history"
-      ],
-      "status_label": "Alpha",
-      "support_ask": "We are looking for inference credits, pilot designers, and creative-tech allies.",
-      "roadmap": [
-        {
-          "title": "Image to prompt",
-          "description": "Core analysis workflow",
-          "state": "done"
-        },
-        {
-          "title": "Layer editor",
-          "description": "Control over style, light, and composition",
-          "state": "current"
-        },
-        {
-          "title": "Team library",
-          "description": "Presets and collaboration",
-          "state": "next"
         }
       ]
     },
@@ -364,36 +303,48 @@ export const siteTranslations = {
         }
       ]
     },
-    "med": {
-      "tagline": "More human digital tools for clinical work.",
-      "summary": "An experimentation space for reducing friction in healthcare workflows, with privacy and clarity as requirements from day one.",
-      "pitch": "MED explores how software can give time and context back to healthcare professionals. It is in discovery and aims to build with experts, not around them.",
+    "genai-studio": {
+      "tagline": "Your AI content studio, on any screen.",
+      "summary": "A simple responsive interface that turns AI workflows into production tools available from iPhone, Android, or desktop.",
+      "pitch": "GenAI Studio turns a self-hosted ComfyUI installation into a production studio the whole team can use. Businesses, influencers, and creators can edit images, transform styles, generate audio, and download results without navigating technical graphs. Every new workflow becomes a clear, reusable tool ready to use from a phone or computer.",
+      "opportunity_title": "Fewer nodes. More content ready to publish.",
+      "opportunity_body": "Bring your AI workflows into an interface your creative team understands. Choose a format, upload references, write the instruction, and follow the result in one queue using your own infrastructure.",
+      "opportunity_highlights": [
+        "Mobile-first design",
+        "Reusable workflows",
+        "Your own infrastructure"
+      ],
       "audience": [
-        "Healthcare professionals",
-        "Clinics",
-        "Health tech"
+        "Businesses and brands",
+        "Influencers",
+        "Content creators"
       ],
       "features": [
-        "Clinical-workflow-centered design",
-        "Privacy as a product principle",
-        "Prototyping with specialists"
+        "Multi-format production: image editing and simplification, voice generation, and a space ready for video",
+        "No technical complexity: clear forms, uploads, microphone recording, job queue, and result downloads",
+        "Extensible catalog: add new ComfyUI workflows without rewriting the interface or backend"
       ],
-      "status_label": "Research",
-      "support_ask": "We are looking for clinical advisors, pilot institutions, and health-tech allies.",
+      "status_label": "Functional alpha",
+      "support_ask": "We are looking for businesses, influencers, and content teams to design repeatable workflows, plus partners in GPU infrastructure and creative distribution.",
       "roadmap": [
         {
-          "title": "Discovery",
-          "description": "Interviews and problem definition",
+          "title": "Responsive studio",
+          "description": "iPhone, Android, and desktop interface with asynchronous jobs and downloadable results",
+          "state": "done"
+        },
+        {
+          "title": "Image and voice",
+          "description": "Visual editing, style simplification, and text-to-voice with reference audio",
+          "state": "done"
+        },
+        {
+          "title": "Content workflows",
+          "description": "Presets for campaigns, products, social media, and video production",
           "state": "current"
         },
         {
-          "title": "Secure prototype",
-          "description": "First private and testable workflow",
-          "state": "next"
-        },
-        {
-          "title": "Clinical pilot",
-          "description": "Supervised validation in context",
+          "title": "Team spaces",
+          "description": "Shared library, permissions, and history for each brand or creator",
           "state": "next"
         }
       ]

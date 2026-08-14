@@ -18,79 +18,53 @@ apps:
     monogram: FW
     logo: /apps/framewise/logo.svg
     theme: dark
-    tagline: Tus fotos. Tu criterio. Tu computadora.
+    tagline: Tu archivo. Tu criterio. Ahora también en iPhone.
     summary: >-
-      Framewise analiza, califica y ordena sesiones fotográficas completas sin
-      que una sola imagen abandone tu computadora. Horama no recibe, almacena
-      ni entrena con tus fotografías.
+      Framewise analiza, califica y organiza sesiones fotográficas desde el
+      escritorio o su app companion para iPhone, conectada a tu servicio local.
+      Horama no recibe, almacena ni entrena con tus fotografías.
     pitch: >-
       Tu archivo fotográfico no debería pagar con privacidad la comodidad de una
       herramienta inteligente. Framewise encuentra las tomas más fuertes, explica
-      por qué funcionan y ayuda a mejorar únicamente lo necesario. Su servicio de
-      edición fiel sigue las recomendaciones del análisis sin reinventar la foto:
-      respeta al sujeto, la composición y la intención de la toma, mientras el
-      original permanece siempre intacto. Tus imágenes y tus decisiones siguen siendo tuyas.
-    opportunity_title: Privacidad local. Criterio editorial.
+      por qué funcionan y ayuda a mejorar únicamente lo necesario. En iPhone puedes
+      elegir fotos de tu biblioteca, enviarlas a tu propio servicio de análisis y
+      revisar resultados y versiones editadas desde una experiencia móvil privada.
+      Los originales permanecen intactos y tus decisiones siguen siendo tuyas.
+    opportunity_title: Criterio editorial, también desde tu iPhone.
     opportunity_body: >-
-      Framewise encuentra las tomas más fuertes y explica por qué funcionan sin
-      sacar tu archivo de la computadora. Cuando una imagen puede mejorar, propone
-      cambios precisos que respetan al sujeto, la composición y la intención de la toma.
+      Trabaja sesiones completas en tu computadora o selecciona fotos desde la
+      biblioteca del iPhone. Framewise conecta ambos flujos con análisis explicable,
+      una cola privada y ediciones que respetan al sujeto, la composición y la intención.
     opportunity_highlights:
-      - Cero uploads
+      - App companion para iPhone
       - Originales intactos
-      - Decisiones bajo tu control
-    audience: [Fotógrafos, Editores de fotografía, Estudios creativos]
+      - Procesamiento bajo tu control
+    audience: [Fotógrafos, Creadores móviles, Estudios creativos]
     features:
-      - "Privacidad real: sin uploads, sin nube y sin almacenamiento en servidores de Horama"
-      - "Selección explicable: crítica, puntuación, duplicados y decisiones editoriales bajo tu control"
-      - "Edición fiel y no destructiva: mejora desde las recomendaciones sin reemplazar tu mirada ni tocar el original"
+      - "Escritorio e iPhone: analiza carpetas completas o elige fotos directamente desde tu biblioteca de iOS"
+      - "Selección explicable: crítica, puntuación, duplicados y decisiones editoriales en una biblioteca privada por dispositivo"
+      - "Flujo completo: cola de análisis, edición fiel, versiones locales y captions para compartir sin tocar el original"
     version: 1.0.0
     status: stable
-    status_label: v1.0 local
+    status_label: Desktop v1 · iPhone companion
     color: "#d8ff4f"
     ink: "#0b0d0b"
     accent: "#ff8a4b"
-    related_apps: [itp]
+    related_apps: [genai-studio]
+    repo: https://github.com/davcastroruiz/framewise
     demo: /apps/framewise/framewise-demo.gif
     demo_label: DEMO / FLUJO REAL
-    demo_title: Una sesión completa, sin salir de tu computadora.
+    demo_title: Una sesión completa en escritorio, conectada con iPhone.
     demo_caption: >-
       Recorrido real por Framewise: contact sheet, análisis explicable y biblioteca
-      de versiones editadas. Las fotografías y sus resultados permanecen locales.
-    demo_alt: Demostración de Framewise analizando y organizando una sesión fotográfica local
-    support_ask: Buscamos fotógrafos y estudios que quieran demostrar que una experiencia inteligente puede ser poderosa sin apropiarse de su archivo, además de aliados de distribución y hardware local.
+      de versiones editadas. La app companion lleva la selección, el seguimiento y
+      los resultados a iPhone mientras el servicio de análisis sigue bajo tu control.
+    demo_alt: Demostración de Framewise analizando una sesión fotográfica conectada con su app para iPhone
+    support_ask: Buscamos fotógrafos, creadores móviles y estudios que prueben el flujo entre escritorio e iPhone, además de aliados de distribución y hardware local.
     roadmap:
       - { title: Privacidad por arquitectura, description: "Fotografías, análisis y decisiones permanecen en el equipo del usuario", state: done }
       - { title: Selección profesional explicable, description: "Crítica, ranking, duplicados, comparación, decisiones, XMP y limpieza recuperable", state: done }
-      - { title: Edición fiel y no destructiva, description: "Mejoras guiadas por el análisis, versiones locales y originales siempre intactos", state: done }
-
-  - slug: itp
-    name: ITP
-    monogram: ITP
-    tagline: De una imagen a una intención que sí se puede usar.
-    summary: >-
-      Un laboratorio para traducir referencias visuales en prompts claros,
-      editables y reutilizables.
-    pitch: >-
-      ITP ayuda a equipos creativos a entender qué hace funcionar una imagen y
-      convertirlo en instrucciones que se pueden iterar, compartir y reproducir.
-    audience: [Diseño, Marketing, Equipos de IA]
-    features:
-      - Lectura estructurada de referencias
-      - Prompts editables por capas
-      - Historial de iteraciones
-    version: 0.1.1
-    status: alpha
-    status_label: Alpha
-    color: "#9d7cff"
-    ink: "#17131f"
-    accent: "#e5dcff"
-    related_apps: [horama-3d, framewise]
-    support_ask: Buscamos créditos de inferencia, diseñadores piloto y aliados de creative tech.
-    roadmap:
-      - { title: Imagen a prompt, description: Flujo principal de análisis, state: done }
-      - { title: Editor por capas, description: "Control de estilo, luz y composición", state: current }
-      - { title: Librería de equipos, description: Presets y colaboración, state: next }
+      - { title: Companion para iPhone, description: "Selección con PhotoKit, bibliotecas privadas, cola de análisis, ediciones y captions desde iOS", state: done }
 
   - slug: horama-3d
     name: Horama 3D
@@ -116,7 +90,7 @@ apps:
     color: "#ffc400"
     ink: "#111111"
     accent: "#fff3b0"
-    related_apps: [itp]
+    related_apps: [genai-studio]
     repo: https://github.com/horama-apps/Horama3D
     product_url: https://horama-apps.github.io/Horama3D/?demo=true
     product_cta_label: Ver Configurador ↓
@@ -134,30 +108,45 @@ apps:
       - { title: Llaveros desde imagen, description: "Nuevo módulo de imagen a geometría con controles de fabricación", state: current }
       - { title: Configurador comercial, description: "Catálogo, cotización y checkout", state: next }
 
-  - slug: med
-    name: MED
-    monogram: M+
-    tagline: Herramientas digitales más humanas para el trabajo clínico.
+  - slug: genai-studio
+    name: GenAI Studio
+    monogram: G
+    theme: dark
+    tagline: Tu estudio de contenido con IA, en cualquier pantalla.
     summary: >-
-      Un espacio de experimentación para reducir fricción en flujos de salud,
-      con privacidad y claridad como requisitos desde el inicio.
+      Una interfaz simple y responsiva para convertir workflows de IA en
+      herramientas de producción accesibles desde iPhone, Android o computadora.
     pitch: >-
-      MED explora cómo el software puede devolver tiempo y contexto a los
-      profesionales de salud. Está en etapa de descubrimiento y busca construir
-      junto a expertos, no alrededor de ellos.
-    audience: [Profesionales de salud, Clínicas, Health tech]
+      GenAI Studio convierte una instalación propia de ComfyUI en un estudio de
+      producción usable por todo el equipo. Negocios, influencers y creadores pueden
+      editar imágenes, transformar estilos, generar audio y descargar resultados sin
+      navegar grafos técnicos. Cada workflow nuevo aparece como una herramienta clara
+      y reutilizable, lista para trabajar desde el teléfono o la computadora.
+    opportunity_title: Menos nodos. Más contenido listo para publicar.
+    opportunity_body: >-
+      Lleva tus workflows de IA a una interfaz que entiende el equipo creativo.
+      Elige una modalidad, carga referencias, escribe la instrucción y sigue el
+      resultado desde una cola unificada, usando tu propia infraestructura.
+    opportunity_highlights:
+      - Diseñado para móvil
+      - Workflows reutilizables
+      - Infraestructura propia
+    audience: [Negocios y marcas, Influencers, Creadores de contenido]
     features:
-      - Diseño centrado en el flujo clínico
-      - Privacidad como principio de producto
-      - Prototipado con especialistas
-    version: pending
-    status: research
-    status_label: Investigación
-    color: "#4b8cff"
-    ink: "#0b1830"
-    accent: "#d8e6ff"
-    support_ask: Buscamos asesores clínicos, instituciones piloto y aliados de health tech.
+      - "Producción multiformato: edición y simplificación de imágenes, generación de voz y espacio preparado para video"
+      - "Experiencia sin complejidad técnica: formularios claros, uploads, micrófono, cola de trabajos y descarga de resultados"
+      - "Catálogo extensible: agrega nuevos workflows de ComfyUI sin reescribir la interfaz ni el backend"
+    version: 0.1.0
+    status: alpha
+    status_label: Alpha funcional
+    color: "#ff6a3d"
+    ink: "#101114"
+    accent: "#ffd8cc"
+    related_apps: [framewise, horama-3d]
+    repo: https://github.com/horama-apps/genai
+    support_ask: Buscamos negocios, influencers y equipos de contenido para diseñar workflows repetibles, además de aliados con infraestructura de GPU y distribución creativa.
     roadmap:
-      - { title: Descubrimiento, description: Entrevistas y definición del problema, state: current }
-      - { title: Prototipo seguro, description: Primer flujo validable y privado, state: next }
-      - { title: Piloto clínico, description: Validación supervisada en contexto, state: next }
+      - { title: Estudio responsivo, description: "Interfaz para iPhone, Android y computadora con jobs asíncronos y resultados descargables", state: done }
+      - { title: Imagen y voz, description: "Edición visual, simplificación de estilo y voz desde texto con audio de referencia", state: done }
+      - { title: Flujos para contenido, description: "Presets para campañas, producto, redes sociales y producción de video", state: current }
+      - { title: Espacios de equipo, description: "Biblioteca compartida, permisos e historial por marca o creador", state: next }

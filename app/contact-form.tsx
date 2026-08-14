@@ -67,7 +67,7 @@ export function ContactForm({ locale, triggerLabel }: { locale: Locale; triggerL
             <label><span>{t.name}</span><input name="name" autoComplete="name" required /></label>
             <label><span>{t.email}</span><input name="email" type="email" autoComplete="email" required /></label>
             <label><span>{t.organization}</span><input name="organization" autoComplete="organization" /></label>
-            <label><span>{t.app}</span><select name="app" required defaultValue=""><option value="" disabled>{t.appPrompt}</option><option>Horama Apps</option><option>Framewise</option><option>ITP</option><option>Horama 3D</option><option>MED</option></select></label>
+            <label><span>{t.app}</span><select name="app" required defaultValue=""><option value="" disabled>{t.appPrompt}</option><option>Horama Apps</option><option>Horama 3D</option><option>Framewise</option><option>GenAI Studio</option></select></label>
             <label><span>{t.collaboration}</span><select name="collaboration_type" required defaultValue=""><option value="" disabled>{t.collaborationPrompt}</option>{t.options.map((option) => <option key={option}>{option}</option>)}</select></label>
             <label><span>{t.contribution}</span><select name="support_range" defaultValue=""><option value="">{t.contributionPrompt}</option>{t.contributions.map((option) => <option key={option}>{option}</option>)}</select></label>
             <label className="contact-message"><span>{t.message}</span><textarea name="message" rows={5} placeholder={t.placeholder} required /></label>

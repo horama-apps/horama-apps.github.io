@@ -17,6 +17,10 @@ test("renders the Horama portfolio from YAML", async () => {
   assert.match(html, /Software con futuro/);
   assert.match(html, /Framewise/);
   assert.match(html, /Horama 3D/);
+  assert.match(html, /GenAI Studio/);
+  assert.match(html, /Tres apuestas/);
+  assert.doesNotMatch(html, />ITP</);
+  assert.doesNotMatch(html, />MED</);
   assert.match(html, /No buscamos solo inversión/);
   assert.match(html, /formsubmit\.co\/horama\.3d@gmail\.com/);
   assert.match(html, /name="collaboration_type"/);
@@ -41,11 +45,15 @@ test("renders product routes with roadmap and version", async () => {
   assert.match(html, /<iframe/);
 });
 
-test("renders current cross-product references", async () => {
-  const itpHtml = await (await render("/itp/")).text();
-  assert.match(itpHtml, /href="\/horama-3d"/);
-  assert.match(itpHtml, /href="\/framewise"/);
-  assert.doesNotMatch(itpHtml, /class="support-arrow"/);
+test("renders GenAI Studio for businesses and content creators", async () => {
+  const html = await (await render("/genai-studio/")).text();
+  assert.match(html, /Tu estudio de contenido con IA/);
+  assert.match(html, /Negocios y marcas/);
+  assert.match(html, /Influencers/);
+  assert.match(html, /Creadores de contenido/);
+  assert.match(html, /Producción multiformato/);
+  assert.match(html, /href="\/framewise"/);
+  assert.match(html, /href="\/horama-3d"/);
 });
 
 test("renders English routes and real app versions", async () => {
@@ -58,19 +66,18 @@ test("renders English routes and real app versions", async () => {
   assert.match(html, /Back to portfolio/);
 });
 
-test("renders Framewise with its real brand and privacy-first product data", async () => {
+test("renders Framewise with its desktop and iPhone product data", async () => {
   const response = await render("/framewise/");
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /\/apps\/framewise\/logo\.svg/);
   assert.match(html, /product-theme-dark/);
-  assert.match(html, /Horama no recibe, almacena/);
+  assert.match(html, /app companion para iPhone/);
   assert.match(html, /v1\.0\.0/);
-  assert.match(html, /Edición fiel y no destructiva/);
+  assert.match(html, /Companion para iPhone/);
   assert.match(html, /framewise-demo\.gif/);
   assert.match(html, /Una sesión completa/);
-  assert.match(html, /Privacidad local\. Criterio editorial\./);
-  assert.match(html, /Cero uploads/);
-  assert.match(html, /href="\/itp"/);
-  assert.doesNotMatch(html, /ComfyUI/);
+  assert.match(html, /Criterio editorial, también desde tu iPhone\./);
+  assert.match(html, /App companion para iPhone/);
+  assert.match(html, /href="\/genai-studio"/);
 });
