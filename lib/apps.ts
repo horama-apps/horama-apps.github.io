@@ -28,7 +28,6 @@ export type AppData = {
   color: string;
   ink: string;
   accent: string;
-  repo?: string;
   product_url?: string;
   related_apps?: readonly string[];
   product_cta_label?: string;

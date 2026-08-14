@@ -48,7 +48,6 @@ export const siteData = {
       "related_apps": [
         "genai-studio"
       ],
-      "repo": "https://github.com/davcastroruiz/framewise",
       "demo": "/apps/framewise/framewise-demo.gif",
       "demo_label": "DEMO / FLUJO REAL",
       "demo_title": "Una sesión completa en escritorio, conectada con iPhone.",
@@ -100,7 +99,6 @@ export const siteData = {
       "related_apps": [
         "genai-studio"
       ],
-      "repo": "https://github.com/horama-apps/Horama3D",
       "product_url": "https://horama-apps.github.io/Horama3D/?demo=true",
       "product_cta_label": "Ver Configurador ↓",
       "embed_url": "https://horama-apps.github.io/Horama3D/?demo=true",
@@ -171,7 +169,6 @@ export const siteData = {
         "framewise",
         "horama-3d"
       ],
-      "repo": "https://github.com/horama-apps/genai",
       "support_ask": "Buscamos negocios, influencers y equipos de contenido para diseñar workflows repetibles, además de aliados con infraestructura de GPU y distribución creativa.",
       "roadmap": [
         {
