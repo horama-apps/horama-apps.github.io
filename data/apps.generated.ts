@@ -189,7 +189,7 @@ export const siteData = {
       "name": "Kiroku",
       "monogram": "K",
       "logo": "/apps/kiroku/logo.svg",
-      "theme": "light",
+      "theme": "dark",
       "tagline": "Recuerda lo que importa.",
       "summary": "Una app nativa para iPhone que transforma notas de voz en memoria personal organizada, con transcripción, resumen, etiquetas y acciones claras.",
       "pitch": "Las ideas, acuerdos y recuerdos importantes suelen aparecer cuando no hay tiempo para escribir. Kiroku permite capturarlos hablando y convierte cada grabación en una nota estructurada que puedes volver a encontrar y utilizar. La biblioteca vive en el iPhone con SwiftData, mientras un gateway privado procesa el audio con Whisper y Ollama sin exponer directamente la infraestructura. A largo plazo, Kiroku busca extender esa memoria privada con captura manos libres y recordatorios físicos opcionales.",

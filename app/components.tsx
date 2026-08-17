@@ -31,7 +31,7 @@ function Horama3DMark() {
 
 export function AppMark({ app, compact = false }: { app: AppData; compact?: boolean }) {
   return (
-    <span className={`app-mark ${compact ? "app-mark-compact" : ""}`} style={{ background: app.color, color: app.ink }} aria-hidden="true">
+    <span className={`app-mark app-mark-${app.slug} ${compact ? "app-mark-compact" : ""}`} style={{ background: app.color, color: app.ink }} aria-hidden="true">
       {app.slug === "horama-3d" ? <Horama3DMark /> : app.logo ? <img src={app.logo} alt="" /> : app.monogram}
     </span>
   );

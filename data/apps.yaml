@@ -150,7 +150,7 @@ apps:
     name: Kiroku
     monogram: K
     logo: /apps/kiroku/logo.svg
-    theme: light
+    theme: dark
     tagline: Recuerda lo que importa.
     summary: >-
       Una app nativa para iPhone que transforma notas de voz en memoria personal

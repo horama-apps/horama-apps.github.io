@@ -94,7 +94,8 @@ test("renders Kiroku as a private iPhone-first personal memory app", async () =>
   assert.match(html, /Kiroku — Horama Apps/);
   assert.match(html, /Recuerda lo que importa/);
   assert.match(html, /\/apps\/kiroku\/logo\.svg/);
-  assert.match(html, /product-theme-light product-kiroku/);
+  assert.match(html, /product-theme-dark product-kiroku/);
+  assert.match(html, /app-mark-kiroku/);
   assert.match(html, /SwiftData/);
   assert.match(html, /Whisper/);
   assert.match(html, /Ollama/);
