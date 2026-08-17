@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Horama Apps — Ideas que merecen existir",
     description: "Cuatro productos independientes buscando comunidad, alianzas e impulso.",
     type: "website",
-    images: [{ url: "/og.png", width: 1730, height: 909, alt: "Horama Apps — Cuatro productos. Una misma casa." }],
+    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "Horama Apps — Cuatro productos. Una misma casa." }],
   },
   twitter: {
     card: "summary_large_image",
