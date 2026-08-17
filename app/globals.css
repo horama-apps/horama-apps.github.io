@@ -61,8 +61,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .marker-two { right: 19%; top: 34%; background: #ffc400; }
 .marker-three { right: 22%; bottom: 19%; background: #ff6a3d; }
 .marker-four { left: 23%; bottom: 18%; background: #0171c6; }
-.orbit-center { width: 156px; height: 156px; position: absolute; left: 50%; top: 50%; z-index: 3; transform: translate(-50%, -50%); border: 2px solid var(--ink); border-radius: 50%; background: var(--ink); display: grid; place-items: center; box-shadow: 0 22px 46px rgba(17,17,15,.2), 0 0 0 6px var(--paper); }
-.orbit-center img { width: 116px; height: 116px; object-fit: cover; object-position: top; border-radius: 50%; }
+.orbit-center { width: 156px; height: 156px; position: absolute; left: 50%; top: 50%; z-index: 3; transform: translate(-50%, -50%); border: 1px solid rgba(17,17,15,.6); border-radius: 50%; background: var(--ink); display: grid; place-items: center; box-shadow: 0 22px 46px rgba(17,17,15,.16), 0 0 0 2px var(--paper); }
+.orbit-center img { width: 142px; height: 142px; object-fit: cover; object-position: top; border-radius: 50%; }
 .orbit-node { position: absolute; z-index: 4; width: 130px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .orbit-node-shell { width: 94px; height: 94px; display: grid; place-items: center; border: 1px solid rgba(17,17,15,.6); border-radius: 50%; background: color-mix(in srgb, var(--app-color) 76%, white); box-shadow: 0 11px 22px rgba(17,17,15,.15), 0 0 0 2px var(--paper); transition: transform .25s, box-shadow .25s; }
 .orbit-node-kiroku .orbit-node-shell { background: #fff; }
@@ -301,8 +301,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .button { width: 100%; }
   .trust-row { flex-wrap: wrap; }
   .orbit-card { aspect-ratio: 1; border-radius: 15px; }
-  .orbit-center { width: 96px; height: 96px; box-shadow: 0 16px 30px rgba(17,17,15,.18), 0 0 0 4px var(--paper); }
-  .orbit-center img { width: 72px; height: 72px; border-radius: 50%; }
+  .orbit-center { width: 96px; height: 96px; box-shadow: 0 16px 30px rgba(17,17,15,.15), 0 0 0 1px var(--paper); }
+  .orbit-center img { width: 86px; height: 86px; border-radius: 50%; }
   .orbit-node { width: 90px; gap: 6px; }
   .orbit-node-shell { width: 68px; height: 68px; box-shadow: 0 8px 16px rgba(17,17,15,.14), 0 0 0 2px var(--paper); }
   .orbit-node > b { padding: 4px 7px; font-size: 9px; }
