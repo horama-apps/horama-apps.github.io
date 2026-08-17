@@ -145,3 +145,47 @@ apps:
       - { title: Imagen y voz, description: "Edición visual, simplificación de estilo y voz desde texto con audio de referencia", state: done }
       - { title: Flujos para contenido, description: "Presets para campañas, producto, redes sociales y producción de video", state: current }
       - { title: Espacios de equipo, description: "Biblioteca compartida, permisos e historial por marca o creador", state: next }
+
+  - slug: kiroku
+    name: Kiroku
+    monogram: K
+    logo: /apps/kiroku/logo.svg
+    theme: dark
+    tagline: Recuerda lo que importa.
+    summary: >-
+      Una app nativa para iPhone que transforma notas de voz en memoria personal
+      organizada, con transcripción, resumen, etiquetas y acciones claras.
+    pitch: >-
+      Las ideas, acuerdos y recuerdos importantes suelen aparecer cuando no hay
+      tiempo para escribir. Kiroku permite capturarlos hablando y convierte cada
+      grabación en una nota estructurada que puedes volver a encontrar y utilizar.
+      La biblioteca vive en el iPhone con SwiftData, mientras un gateway privado
+      procesa el audio con Whisper y Ollama sin exponer directamente la infraestructura.
+      A largo plazo, Kiroku busca extender esa memoria privada con captura manos
+      libres y recordatorios físicos opcionales.
+    opportunity_title: Habla ahora. Encuentra el recuerdo cuando lo necesites.
+    opportunity_body: >-
+      Kiroku reduce la distancia entre una idea espontánea y una memoria útil.
+      Graba desde el iPhone y recibe una nota con título, resumen, transcripción,
+      tipo, etiquetas y próximos pasos, lista para conservar y consultar.
+    opportunity_highlights:
+      - Nativa para iPhone
+      - Memoria local con SwiftData
+      - IA mediante gateway privado
+    audience: [Profesionales, Personas con muchas ideas, Equipos y reuniones]
+    features:
+      - "Captura por voz: grabación nativa con pausa, reproducción y conservación opcional del audio original"
+      - "Notas estructuradas: Whisper transcribe y Ollama organiza título, resumen, tipo, etiquetas y acciones"
+      - "Privacidad por arquitectura: datos locales, API autenticada y credenciales protegidas en el Keychain de iOS"
+    version: 0.1.0
+    status: alpha
+    status_label: Alpha nativa para iPhone
+    color: "#0171c6"
+    ink: "#f4f7fa"
+    accent: "#9fd5ff"
+    support_ask: Buscamos usuarios de iPhone que capturen ideas, reuniones y reflexiones por voz, además de aliados para probar búsqueda, procesamiento privado y futuros companions de voz e impresión térmica.
+    roadmap:
+      - { title: App nativa y memoria local, description: "SwiftUI, SwiftData, grabación con AVFoundation y experiencia bilingüe en iOS 17", state: done }
+      - { title: Voz a nota estructurada, description: "Upload autenticado, Whisper, Ollama, estados de procesamiento y reintento seguro", state: done }
+      - { title: Ask Kiroku y búsqueda, description: "Consulta semántica de la memoria personal y recuperación de notas relacionadas", state: current }
+      - { title: Memoria en el espacio físico, description: "Integraciones opcionales con Seeed Studio ReSpeaker para captura manos libres y Thermal Sticky para hacer visibles recordatorios y acciones", state: next }

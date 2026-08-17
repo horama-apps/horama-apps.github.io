@@ -18,7 +18,8 @@ test("renders the Horama portfolio from YAML", async () => {
   assert.match(html, /Framewise/);
   assert.match(html, /Horama 3D/);
   assert.match(html, /GenAI Studio/);
-  assert.match(html, /Tres apuestas/);
+  assert.match(html, /Kiroku/);
+  assert.match(html, /Cuatro apuestas/);
   assert.doesNotMatch(html, />ITP</);
   assert.doesNotMatch(html, />MED</);
   assert.match(html, /No buscamos solo inversión/);
@@ -84,4 +85,31 @@ test("renders Framewise with its desktop and iPhone product data", async () => {
   assert.doesNotMatch(html, /PRODUCTOS CONECTADOS/);
   assert.doesNotMatch(html, /class="related-section/);
   assert.doesNotMatch(html, /github\.com/);
+});
+
+test("renders Kiroku as a private iPhone-first personal memory app", async () => {
+  const response = await render("/kiroku/");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Kiroku — Horama Apps/);
+  assert.match(html, /Recuerda lo que importa/);
+  assert.match(html, /\/apps\/kiroku\/logo\.svg/);
+  assert.match(html, /SwiftData/);
+  assert.match(html, /Whisper/);
+  assert.match(html, /Ollama/);
+  assert.match(html, /Seeed Studio ReSpeaker/);
+  assert.match(html, /Thermal Sticky/);
+  assert.doesNotMatch(html, /\/og\.png/);
+  assert.doesNotMatch(html, /github\.com/);
+});
+
+test("renders Kiroku English metadata and product copy", async () => {
+  const response = await render("/en/kiroku/");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Kiroku — Horama Apps/);
+  assert.match(html, /Remember what matters/);
+  assert.match(html, /Native iPhone alpha/);
+  assert.match(html, /Memory in physical space/);
+  assert.doesNotMatch(html, /\/og\.png/);
 });

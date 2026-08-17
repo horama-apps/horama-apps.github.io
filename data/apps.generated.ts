@@ -183,6 +183,62 @@ export const siteData = {
           "state": "next"
         }
       ]
+    },
+    {
+      "slug": "kiroku",
+      "name": "Kiroku",
+      "monogram": "K",
+      "logo": "/apps/kiroku/logo.svg",
+      "theme": "dark",
+      "tagline": "Recuerda lo que importa.",
+      "summary": "Una app nativa para iPhone que transforma notas de voz en memoria personal organizada, con transcripción, resumen, etiquetas y acciones claras.",
+      "pitch": "Las ideas, acuerdos y recuerdos importantes suelen aparecer cuando no hay tiempo para escribir. Kiroku permite capturarlos hablando y convierte cada grabación en una nota estructurada que puedes volver a encontrar y utilizar. La biblioteca vive en el iPhone con SwiftData, mientras un gateway privado procesa el audio con Whisper y Ollama sin exponer directamente la infraestructura. A largo plazo, Kiroku busca extender esa memoria privada con captura manos libres y recordatorios físicos opcionales.",
+      "opportunity_title": "Habla ahora. Encuentra el recuerdo cuando lo necesites.",
+      "opportunity_body": "Kiroku reduce la distancia entre una idea espontánea y una memoria útil. Graba desde el iPhone y recibe una nota con título, resumen, transcripción, tipo, etiquetas y próximos pasos, lista para conservar y consultar.",
+      "opportunity_highlights": [
+        "Nativa para iPhone",
+        "Memoria local con SwiftData",
+        "IA mediante gateway privado"
+      ],
+      "audience": [
+        "Profesionales",
+        "Personas con muchas ideas",
+        "Equipos y reuniones"
+      ],
+      "features": [
+        "Captura por voz: grabación nativa con pausa, reproducción y conservación opcional del audio original",
+        "Notas estructuradas: Whisper transcribe y Ollama organiza título, resumen, tipo, etiquetas y acciones",
+        "Privacidad por arquitectura: datos locales, API autenticada y credenciales protegidas en el Keychain de iOS"
+      ],
+      "version": "0.1.0",
+      "status": "alpha",
+      "status_label": "Alpha nativa para iPhone",
+      "color": "#0171c6",
+      "ink": "#f4f7fa",
+      "accent": "#9fd5ff",
+      "support_ask": "Buscamos usuarios de iPhone que capturen ideas, reuniones y reflexiones por voz, además de aliados para probar búsqueda, procesamiento privado y futuros companions de voz e impresión térmica.",
+      "roadmap": [
+        {
+          "title": "App nativa y memoria local",
+          "description": "SwiftUI, SwiftData, grabación con AVFoundation y experiencia bilingüe en iOS 17",
+          "state": "done"
+        },
+        {
+          "title": "Voz a nota estructurada",
+          "description": "Upload autenticado, Whisper, Ollama, estados de procesamiento y reintento seguro",
+          "state": "done"
+        },
+        {
+          "title": "Ask Kiroku y búsqueda",
+          "description": "Consulta semántica de la memoria personal y recuperación de notas relacionadas",
+          "state": "current"
+        },
+        {
+          "title": "Memoria en el espacio físico",
+          "description": "Integraciones opcionales con Seeed Studio ReSpeaker para captura manos libres y Thermal Sticky para hacer visibles recordatorios y acciones",
+          "state": "next"
+        }
+      ]
     }
   ]
 } as const;
@@ -333,6 +389,52 @@ export const siteTranslations = {
         {
           "title": "Team spaces",
           "description": "Shared library, permissions, and history for each brand or creator",
+          "state": "next"
+        }
+      ]
+    },
+    "kiroku": {
+      "tagline": "Remember what matters.",
+      "summary": "A native iPhone app that turns voice notes into organized personal memory, with transcription, summaries, tags, and clear action items.",
+      "pitch": "Important ideas, agreements, and memories often appear when there is no time to write. Kiroku captures them through speech and turns every recording into a structured note you can find and use later. The library lives on iPhone with SwiftData, while a private gateway processes audio with Whisper and Ollama without exposing the infrastructure directly. Long term, Kiroku aims to extend that private memory with optional hands-free capture and physical reminders.",
+      "opportunity_title": "Speak now. Find the memory when you need it.",
+      "opportunity_body": "Kiroku shortens the distance between a spontaneous thought and useful memory. Record on iPhone and receive a note with a title, summary, transcript, type, tags, and next steps, ready to keep and revisit.",
+      "opportunity_highlights": [
+        "Native for iPhone",
+        "Local memory with SwiftData",
+        "AI through a private gateway"
+      ],
+      "audience": [
+        "Professionals",
+        "People with many ideas",
+        "Teams and meetings"
+      ],
+      "features": [
+        "Voice capture: native recording with pause, playback, and optional retention of the original audio",
+        "Structured notes: Whisper transcribes and Ollama organizes the title, summary, type, tags, and action items",
+        "Privacy by architecture: local data, an authenticated API, and credentials protected in the iOS Keychain"
+      ],
+      "status_label": "Native iPhone alpha",
+      "support_ask": "We are looking for iPhone users who capture ideas, meetings, and reflections by voice, plus partners to test search, private processing, and future voice and thermal-print companions.",
+      "roadmap": [
+        {
+          "title": "Native app and local memory",
+          "description": "SwiftUI, SwiftData, AVFoundation recording, and a bilingual iOS 17 experience",
+          "state": "done"
+        },
+        {
+          "title": "Voice to structured note",
+          "description": "Authenticated upload, Whisper, Ollama, processing states, and safe retry",
+          "state": "done"
+        },
+        {
+          "title": "Ask Kiroku and search",
+          "description": "Semantic conversation with personal memory and recovery of related notes",
+          "state": "current"
+        },
+        {
+          "title": "Memory in physical space",
+          "description": "Optional Seeed Studio ReSpeaker hands-free capture and Thermal Sticky reminders and action items",
           "state": "next"
         }
       ]

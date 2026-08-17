@@ -8,7 +8,14 @@ export function generateStaticParams() { return getSiteData().apps.map((app) => 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const app = getApp(slug);
-  return app ? { title: `${app.name} — Horama Apps`, description: app.summary } : {};
+  if (!app) return {};
+  const title = `${app.name} — Horama Apps`;
+  return {
+    title,
+    description: app.summary,
+    openGraph: { title, description: app.summary, type: "website", images: [] },
+    twitter: { card: "summary", title, description: app.summary, images: [] },
+  };
 }
 
 export default async function AppPage({ params }: { params: Promise<{ slug: string }> }) {

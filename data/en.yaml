@@ -114,3 +114,37 @@ apps:
       - { title: Image and voice, description: "Visual editing, style simplification, and text-to-voice with reference audio", state: done }
       - { title: Content workflows, description: "Presets for campaigns, products, social media, and video production", state: current }
       - { title: Team spaces, description: "Shared library, permissions, and history for each brand or creator", state: next }
+
+  kiroku:
+    tagline: Remember what matters.
+    summary: >-
+      A native iPhone app that turns voice notes into organized personal memory,
+      with transcription, summaries, tags, and clear action items.
+    pitch: >-
+      Important ideas, agreements, and memories often appear when there is no time
+      to write. Kiroku captures them through speech and turns every recording into
+      a structured note you can find and use later. The library lives on iPhone
+      with SwiftData, while a private gateway processes audio with Whisper and
+      Ollama without exposing the infrastructure directly. Long term, Kiroku aims
+      to extend that private memory with optional hands-free capture and physical reminders.
+    opportunity_title: Speak now. Find the memory when you need it.
+    opportunity_body: >-
+      Kiroku shortens the distance between a spontaneous thought and useful memory.
+      Record on iPhone and receive a note with a title, summary, transcript, type,
+      tags, and next steps, ready to keep and revisit.
+    opportunity_highlights:
+      - Native for iPhone
+      - Local memory with SwiftData
+      - AI through a private gateway
+    audience: [Professionals, People with many ideas, Teams and meetings]
+    features:
+      - "Voice capture: native recording with pause, playback, and optional retention of the original audio"
+      - "Structured notes: Whisper transcribes and Ollama organizes the title, summary, type, tags, and action items"
+      - "Privacy by architecture: local data, an authenticated API, and credentials protected in the iOS Keychain"
+    status_label: Native iPhone alpha
+    support_ask: We are looking for iPhone users who capture ideas, meetings, and reflections by voice, plus partners to test search, private processing, and future voice and thermal-print companions.
+    roadmap:
+      - { title: Native app and local memory, description: "SwiftUI, SwiftData, AVFoundation recording, and a bilingual iOS 17 experience", state: done }
+      - { title: Voice to structured note, description: "Authenticated upload, Whisper, Ollama, processing states, and safe retry", state: done }
+      - { title: Ask Kiroku and search, description: "Semantic conversation with personal memory and recovery of related notes", state: current }
+      - { title: Memory in physical space, description: "Optional Seeed Studio ReSpeaker hands-free capture and Thermal Sticky reminders and action items", state: next }
