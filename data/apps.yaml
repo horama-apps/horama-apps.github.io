@@ -151,41 +151,44 @@ apps:
     monogram: K
     logo: /apps/kiroku/logo.svg
     theme: dark
-    tagline: Recuerda lo que importa.
+    tagline: Tu memoria privada, lista para volver a ella.
     summary: >-
-      Una app nativa para iPhone que transforma notas de voz en memoria personal
-      organizada, con transcripción, resumen, etiquetas y acciones claras.
+      Un sistema de memoria personal para iPhone y Apple Watch que convierte voz,
+      audio y video compartido en notas, tareas, respuestas y mapas conceptuales
+      privados.
     pitch: >-
       Las ideas, acuerdos y recuerdos importantes suelen aparecer cuando no hay
-      tiempo para escribir. Kiroku permite capturarlos hablando y convierte cada
-      grabación en una nota estructurada que puedes volver a encontrar y utilizar.
-      La biblioteca vive en el iPhone con SwiftData, mientras un gateway privado
-      procesa el audio con Whisper y Ollama sin exponer directamente la infraestructura.
-      A largo plazo, Kiroku busca extender esa memoria privada con captura manos
-      libres y recordatorios físicos opcionales.
-    opportunity_title: Habla ahora. Encuentra el recuerdo cuando lo necesites.
+      tiempo para escribir. Kiroku los captura desde el iPhone, Apple Watch, widgets
+      o la hoja de compartir y los convierte en memoria estructurada. Ask Kiroku
+      responde con fuentes navegables, las tareas conservan su vínculo con la nota
+      original y los mapas conceptuales revelan relaciones entre personas, proyectos,
+      lugares, temas y decisiones. SwiftData mantiene al iPhone como fuente de verdad,
+      mientras PostgreSQL, pgvector, Whisper y Ollama operan detrás de una API privada.
+    opportunity_title: Captura una vez. Recuerda, conecta y actúa después.
     opportunity_body: >-
-      Kiroku reduce la distancia entre una idea espontánea y una memoria útil.
-      Graba desde el iPhone y recibe una nota con título, resumen, transcripción,
-      tipo, etiquetas y próximos pasos, lista para conservar y consultar.
+      Cada memoria puede convertirse en una nota consultable, una tarea con fecha y
+      prioridad, una fuente para una respuesta privada o un nodo dentro de un mapa
+      conceptual. Los grupos permiten compartir únicamente las notas elegidas sin
+      ceder la propiedad ni abrir toda la biblioteca personal.
     opportunity_highlights:
-      - Nativa para iPhone
-      - Memoria local con SwiftData
-      - IA mediante gateway privado
-    audience: [Profesionales, Personas con muchas ideas, Equipos y reuniones]
+      - Captura en iPhone, Apple Watch y Share Sheet
+      - Ask Kiroku y mapas conceptuales con fuentes
+      - Grupos privados con control por nota
+    audience: [Personas con muchas ideas, Profesionales y reuniones, Familias y grupos privados]
     features:
-      - "Captura por voz: grabación nativa con pausa, reproducción y conservación opcional del audio original"
-      - "Notas estructuradas: Whisper transcribe y Ollama organiza título, resumen, tipo, etiquetas y acciones"
-      - "Privacidad por arquitectura: datos locales, API autenticada y credenciales protegidas en el Keychain de iOS"
-    version: 0.1.0
+      - "Captura donde ocurre la idea: grabación en iPhone y Apple Watch, widgets, Control Center y Share Extension para audio o video"
+      - "Memoria que trabaja contigo: notas estructuradas, tareas editables, Ask Kiroku con búsqueda híbrida y mapas conceptuales navegables"
+      - "Privacidad con colaboración explícita: SwiftData local, API autenticada, sesiones en Keychain y grupos que comparten sólo cada nota elegida"
+    version: 0.8.0
     status: alpha
-    status_label: Alpha nativa para iPhone
+    status_label: Alpha privada · iPhone + Watch
     color: "#0171c6"
     ink: "#0b0d10"
     accent: "#9fd5ff"
-    support_ask: Buscamos usuarios de iPhone que capturen ideas, reuniones y reflexiones por voz, además de aliados para probar búsqueda, procesamiento privado y futuros companions de voz e impresión térmica.
+    support_ask: Buscamos usuarios de iPhone y Apple Watch que quieran probar captura cotidiana, tareas, Ask Kiroku, mapas conceptuales, widgets y grupos privados antes de ampliar la sincronización y el recuerdo proactivo.
     roadmap:
-      - { title: App nativa y memoria local, description: "SwiftUI, SwiftData, grabación con AVFoundation y experiencia bilingüe en iOS 17", state: done }
-      - { title: Voz a nota estructurada, description: "Upload autenticado, Whisper, Ollama, estados de procesamiento y reintento seguro", state: done }
-      - { title: Ask Kiroku y búsqueda, description: "Consulta semántica de la memoria personal y recuperación de notas relacionadas", state: current }
-      - { title: Memoria en el espacio físico, description: "Integraciones opcionales con Seeed Studio ReSpeaker para captura manos libres y Thermal Sticky para hacer visibles recordatorios y acciones", state: next }
+      - { title: Captura y memoria persistente, description: "SwiftUI, SwiftData, grabación nativa, Share Extension y jobs privados con Whisper y Ollama", state: done }
+      - { title: Inteligencia con fuentes, description: "Tareas estructuradas, Ask Kiroku con búsqueda híbrida y mapas conceptuales enlazados a cada nota", state: done }
+      - { title: Kiroku alrededor de ti, description: "Apple Watch, widgets, Control Center, Action button, autenticación con Google y grupos privados", state: done }
+      - { title: Memoria multidispositivo, description: "Sincronización autenticada, recordatorios, tareas recurrentes, calendario y recuperación contextual", state: current }
+      - { title: Recuerdo físico y proactivo, description: "Seeed Studio ReSpeaker, Seeed Studio Thermal Sticky y resúmenes configurables con controles explícitos de privacidad", state: next }
